@@ -1,0 +1,39 @@
+API: http://localhost:8080/owners/find?lastName=FUZZ
+COMMAND: wfuzz -w ~/Desktop/Workspace/wfuzz/wordlist/Injections/All_attack.txt http://localhost:8080/owners/find\?lastName\=FUZZ
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=\00\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=<%20%20script%20>%20<%20/%20script> ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=\00\00\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=`dir` ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/find?lastName=`id` ].
+
+
+API: http://localhost:8080/owners/new?firstName=FUZZ&lastName=FUZZ&address=FUZZ&city=FUZZ&telephone=FUZZ
+COMMAND: wfuzz -w ~/Desktop/Workspace/wfuzz/wordlist/Injections/All_attack.txt http://localhost:8080/owners/new?firstName=FUZZ&lastName=FUZZ&address=FUZZ&city=FUZZ&telephone=FUZZ
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\0\0\0&lastName=\0\0\0&address=\0\0\0&city=\0\0\0&telephone=\0\0\0 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\00&lastName=\00&address=\00&city=\00&telephone=\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\00\00&lastName=\00\00&address=\00\00&city=\00\00&telephone=\00\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\0&lastName=\0&address=\0&city=\0&telephone=\0 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\0\0&lastName=\0\0&address=\0\0&city=\0\0&telephone=\0\0 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\00&lastName=\00&address=\00&city=\00&telephone=\00 ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=\nnetstat%20-a%\n&lastName=\nnetstat%20-a%\n&address=\nnetstat%20-a%\n&city=\nnetstat%20-a%\n&telephone=\nnetstat%20-a%\n ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=|/bin/ls%20-al&lastName=|/bin/ls%20-al&address=|/bin/ls%20-al&city=|/bin/ls%20-al&telephone=|/bin/ls%20-al ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=|ls%20-la&lastName=|ls%20-la&address=|ls%20-la&city=|ls%20-la&telephone=|ls%20-la ]
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=/../../../../../../../../../../etc/shadow^^&lastName=/../../../../../../../../../../etc/shadow^^&address=/../../../../../../../../../../etc/shadow^^&city=/../../../../../../../../../../etc/shadow^^&telephone=/../../../../../../../../../../etc/shadow^^ ]
+
