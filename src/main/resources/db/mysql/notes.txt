@@ -1,0 +1,7 @@
+mysql -u root -h localhost --protocol tcp
+
+show databases;
+
+use petclinic
+
+select * from owners;

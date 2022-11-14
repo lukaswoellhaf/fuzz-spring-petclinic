@@ -8,4 +8,5 @@
 	<suppress files="build/.*" checks=".*"/>
 	<suppress files="[\\/]build.log" checks="NoHttp"/>
 	<suppress files=".+\.(jar|git|ico|p12|gif|jks|jpg|svg)" checks="NoHttp"/>
+	<suppress files="src/test/wfuzz/" checks="NoHttp"/>
 </suppressions>

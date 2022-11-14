@@ -37,3 +37,10 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 
 java.lang.IllegalArgumentException: Invalid character found in the request target [/owners/new?firstName=/../../../../../../../../../../etc/shadow^^&lastName=/../../../../../../../../../../etc/shadow^^&address=/../../../../../../../../../../etc/shadow^^&city=/../../../../../../../../../../etc/shadow^^&telephone=/../../../../../../../../../../etc/shadow^^ ]
 
+
+Write test output to file:
+wfuzz -w ~/Desktop/Workspace/wfuzz/wordlist/Injections/All_attack.txt -f ~/Desktop/Workspace/fuzz-spring-petclinic/src/test/wfuzz/fuzz-test-1-results.csv,csv http://localhost:8080/owners/find\?lastName\=FUZZ
+
+wfuzz -w ~/Desktop/Workspace/wfuzz/wordlist/Injections/All_attack.txt -f ~/Desktop/Workspace/fuzz-spring-petclinic/src/test/wfuzz/fuzz-test-2-results.csv http://localhost:8080/owners/new\?firstName\=FUZZ\&lastName\=FUZZ\&address\=FUZZ\&city\=FUZZ\&telephone\=FUZZ
+
+
